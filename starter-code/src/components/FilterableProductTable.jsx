@@ -1,10 +1,23 @@
 import React, { Component } from "react";
+import SearchBar from "./SearchBar";
 
 class FilterableProductTable extends Component {
+    state = {
+        products: this.props.products,
+        searchText:""
+    };
+
+    updateSearchText = text => {
+        this.setState({
+            searchText: text
+        });
+    };
+
     render() {
         return(
-            <div className="IronStore">
-                <h1>IronStore</h1>
+            <div>
+                <SearchBar/>
+                
             </div>
         )
     }

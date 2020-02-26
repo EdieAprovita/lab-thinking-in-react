@@ -6,8 +6,8 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-    <FilterableProducTable/>
-      <SearchBar />
+      <h1>IronStore</h1>
+      <FilterableProducTable/>
       </div>
     );
   }
